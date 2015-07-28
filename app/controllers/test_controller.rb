@@ -16,7 +16,7 @@ class TestController < ApplicationController
 
   def standard_error error
     @error = error
-    render 'error', formats: request.format
+    render 'error' #, formats: request.format
   end
 
 end
